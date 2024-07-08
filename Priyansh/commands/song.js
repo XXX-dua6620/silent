@@ -50,7 +50,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
         return api.sendMessage({ 
 		body: `┏━━━━━┓\n
      ✬✿╭┳✪✪╤───────────➛➣ ★�🆁🅸🅽🅲🅴★🆂🅸🅻🅴🅽🆃)✪��🆈★  ✬✿╭┳✪✪╤───────────➛➣                    ✧═══•❁𝗦𝗢𝗡𝗚❁•═══✧\n
-┗━━━━━┛\n\n🎵 Title𒁍   ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍  ${this.convertHMS(data.dur)}\n👀 Views 𒁍  ${data.viewCount}\n🥰 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁AADI-BABU❁•═══✧`,
+┗━━━━━┛\n\n🎵 Title𒁍   ${data.title}\n🎶 Name Channel 𒁍   ${data.author}\n⏱️ Time 𒁍  ${this.convertHMS(data.dur)}\n👀 Views 𒁍  ${data.viewCount}\n🥰 Likes 𒁍   ${data.likes}\n⏱️ Processing time 𒁍   ${Math.floor((Date.now()- data.timestart)/1000)} second\n✧═══•❁✬✿╭┳✪✪╤───────────➛➣ ★�🆁🅸🅽🅲🅴★🆂🅸🅻🅴🅽🆃)✪��🆈★  ✬✿╭┳✪✪╤───────────➛➣❁•═══✧`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
             
