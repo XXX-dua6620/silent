@@ -66,8 +66,6 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
       "MintBot cân spam nhưng không có gì đáng để bạn spam."
     ];
     var link = [
-      "https://i.postimg.cc/KYyZK6yj/received-781804380019602.jpg",
-    ];
     
     var i = 1;
     var msg = [];
@@ -113,7 +111,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 🦢🍒•••ꞪɛᏒɛ ɪʂ ɮ❍┼ ❍ωɳɜɽ ɳaʍɜ•••🌷💞
 ┏━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┓
 🌸✦✧✧✧✧✰🍒✬✿╭┳✪✪╤───────────➛➣ ★�🆁🅸🅽🅲🅴★🆂🅸🅻🅴🅽🆃)✪��🆈★  ✬✿╭┳✪✪╤───────────➛➣🤩🌿✰✧✧✧✧✦🌸
-┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛`, attachment: fs.createReadStream(__dirname + "/cache/kensu.jpg"), }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/kensu.jpg"));
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/kensu.jpg")).on("close", () => callback()); 
+┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛`, attachment: fs.createReadStream(__dirname + "/noprefix/kk1.jpg"), }, event.threadID, () => fs.unlinkSync(__dirname + "/noprefix/kk1.jpg"));
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/noprefix/kk1.jpg")).on("close", () => callback()); 
   }
 };
