@@ -14,8 +14,9 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("owner ") ||
-     react.includes("aadi") || 
-react.includes("sir")) {
+     react.includes("Owner") || 
+     react.includes("admin") || 
+react.includes("Admin")) {
 		var msg = {
 				body: "★★𝗢𝘄𝗻𝗲𝗿 + 𝗣𝗿𝗼𝗳𝗶𝗹𝗲 𝗛𝗲𝗿𝗲★
 
@@ -24,7 +25,7 @@ react.includes("sir")) {
  https://www.facebook.com/profile.php?id=61551474205816😇
 
 ☞★★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 :  𝐌𝐫.✬✿╭┳✪✪╤───────────➛➣ ★�🆁🅸🅽🅲🅴★🆂🅸🅻🅴🅽🆃)✪��🆈★  ✬✿╭┳✪✪╤───────────➛➣🩷🪽✦`🥀🦋`",
-				attachment: fs.createReadStream(__dirname + `/noprefix/kk1.jpg`)
+				attachment: fs.createReadStream(__dirname + `/noprefix/kk1.jpeg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("📷", event.messageID, (err) => {}, true)
